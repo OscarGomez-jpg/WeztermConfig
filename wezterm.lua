@@ -266,11 +266,9 @@ config.mouse_bindings = {
 	},
 }
 
--- Center window on startup
+-- Start window with initial size (no maximize)
 wezterm.on("gui-startup", function(cmd)
 	local _, _, window = wezterm.mux.spawn_window(cmd or {})
-	window:gui_window():maximize()
-	window:gui_window():restore()
 end)
 
 return config
