@@ -12,6 +12,7 @@ config.enable_wayland = true
 -- Fonts
 config.font = wezterm.font("0xProto")
 config.font_size = 11.6
+config.cell_width = 0.9  -- Reduce el espaciado entre caracteres
 
 -- Tab bar font
 config.window_frame = {
