@@ -11,12 +11,12 @@ config.enable_wayland = true
 
 -- Fonts
 config.font = wezterm.font("0xProto")
-config.font_size = 11.6
-config.cell_width = 0.9  -- Reduce el espaciado entre caracteres
+config.font_size = 12.6
+config.cell_width = 0.9 -- Reduce el espaciado entre caracteres
 
 -- Tab bar font
 config.window_frame = {
-	font_size = 9.0,
+	font_size = 10.5,
 }
 
 -- Window
@@ -24,7 +24,7 @@ config.window_frame = {
 config.window_decorations = "NONE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.default_workspace = "main"
-config.use_fancy_tab_bar = false
+-- config.use_fancy_tab_bar = false
 config.status_update_interval = 2000
 config.tab_bar_at_bottom = false
 -- config.enable_scroll_bar = true
