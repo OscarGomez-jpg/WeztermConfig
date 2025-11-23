@@ -11,8 +11,8 @@ config.enable_wayland = true
 
 -- Fonts
 config.font = wezterm.font("0xProto")
-config.font_size = 12.6
-config.cell_width = 0.9 -- Reduce el espaciado entre caracteres
+config.font_size = 12.3
+config.cell_width = 0.9 -- Reduce cell width for better font fit
 
 -- Tab bar font
 config.window_frame = {
@@ -28,6 +28,10 @@ config.default_workspace = "main"
 config.status_update_interval = 2000
 config.tab_bar_at_bottom = false
 -- config.enable_scroll_bar = true
+config.window_content_alignment = {
+	horizontal = "Center",
+	vertical = "Center",
+}
 
 -- Background image
 config.window_background_image = "/home/osgomez/.config/wezterm/wallpapers/monokai-monokai-pro-city.png"
@@ -151,20 +155,6 @@ config.key_tables = {
 		{ key = "Enter", action = "PopKeyTable" },
 	},
 }
-
--- local function separate(left, separator, right)
--- 	local ret = ""
---
--- 	if left then
--- 		ret = left .. separator
--- 	end
---
--- 	if right then
--- 		ret = ret .. right
--- 	end
---
--- 	return ret
--- end
 
 -- Module to show the battery
 local function get_battery_icon()
