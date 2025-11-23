@@ -11,7 +11,7 @@ config.enable_wayland = true
 
 -- Fonts
 config.font = wezterm.font("0xProto")
-config.font_size = 12.3
+config.font_size = 11.5
 config.cell_width = 0.9 -- Reduce cell width for better font fit
 
 -- Tab bar font
